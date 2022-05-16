@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-pwd
+test -f "random3.txt"
