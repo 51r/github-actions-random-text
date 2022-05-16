@@ -1,0 +1,12 @@
+name: Test Code
+on: [pull_request]
+jobs:
+  test-code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: Generate random text
+        run: bash ./text.sh
+      - name: Check if the file was generated
+        run: bash ./check.sh
