@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-test -f "random.txt"
+test -f "random3.txt"
